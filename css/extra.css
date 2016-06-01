@@ -21,13 +21,20 @@ h2 {
     font-size: 2em;
     font-weight: 700;
     color:#444;
-  padding-bottom: 0.25em;
+    padding-bottom: 0.25em;
 }
 
 h3 {
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 400;
     color:#555;
+}
+
+h4 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color:#666;
+    padding-top: 0.25em;
 }
 
 a {
@@ -42,4 +49,8 @@ li.main {
 
 div[role="main"] img {
     max-width: 100%;
+}
+
+footer p {
+    text-align: right;
 }
