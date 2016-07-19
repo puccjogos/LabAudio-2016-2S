@@ -22,7 +22,7 @@ De forma simplificada, o técnico de produção sonora tem diversas áreas de at
 
 ## O que é som de jogos?
 
-Vídeo: [Omni - Suzanne Ciani](https://youtu.be/yC8O5HPvfsg)
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/sM4YAio2LM4" frameborder="0" allowfullscreen></iframe>
 
 ## Licenças e circulação
 

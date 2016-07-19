@@ -9,8 +9,8 @@ Este site é a apostila digital da disciplina *Laboratório de áudio para jogos
 | Data | Conteúdo |
 |---|---|
 | XX/XX | [A01 - Introdução à produção sonora](aulas/a01-producao-sonora.md) |
-| XX/XX | [A02 - Som digital](aulas/02-som-digital.md) |
-| XX/XX | [A03 - Efeitos sonoros (SFX)](aulas/03-efeitos-sonoros.md) |
+| XX/XX | [A02 - Som digital](aulas/a02-som-digital.md) |
+| XX/XX | [A03 - Efeitos sonoros (SFX)](aulas/a03-efeitos-sonoros.md) |
 | XX/XX | [A04 - Oficina de SFX](aulas/04-oficina-sfx.md) |
 | XX/XX | [A05 - Implementação de SFX na Unity](aulas/05-implementacao-sfx-unity.md) |
 | XX/XX | [A08 - Introdução à teoria musical](aulas/08-intro-teoria-musical.md) |

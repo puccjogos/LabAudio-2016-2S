@@ -3,6 +3,8 @@ pages:
 - Home: 'index.md'
 - Aulas:
     - 'A01 - Produção sonora' : 'aulas/a01-producao-sonora.md'
+    - 'A02 - Som digital' : 'aulas/a02-som-digital.md'
+    - 'A03 - Efeitos sonoros' : 'aulas/a03-efeitos-sonoros.md'
 theme: bootstrap
 extra_css:
   - css/extra.css
