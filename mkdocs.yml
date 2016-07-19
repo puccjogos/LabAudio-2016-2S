@@ -1,0 +1,15 @@
+site_name: LabÁudio - 2016 - 2S
+pages:
+- Home: 'index.md'
+- Aulas:
+    - 'A01 - Produção sonora' : 'aulas/a01-producao-sonora.md'
+theme: bootstrap
+extra_css:
+  - css/extra.css
+extra_javascript:
+  - js/extra.js
+markdown_extensions:
+  - smarty
+  - sane_lists
+site_favicon: 'imgs/singing.gif'
+repo_url: https://github.com/puccjogos/labaudio-2016-2s
