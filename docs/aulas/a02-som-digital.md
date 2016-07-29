@@ -9,9 +9,11 @@ Links sobre Oddworld e design de som
 
 ![](https://upload.wikimedia.org/wikipedia/commons/6/6d/Sine_waves_different_frequencies.svg)
 
+*Acima: ondas senoidais em diferentes frequências.*
+
 #### Frequência e altura
 
-Quando falamos de **[frequência](https://en.wikipedia.org/wiki/Audio_frequency)** de um som, estamos falando da velocidade dessa vibração. As frequências audíveis para humanos vão de 20 a 20.000 Hz, ou seja, de 20 a 20.000 ciclos por segundo. A nossa percepção subjetiva dessas frequências é chamada de **[altura](https://pt.wikipedia.org/wiki/Altura_(m%C3%BAsica))** (pitch). 
+Quando falamos de **[frequência](https://en.wikipedia.org/wiki/Audio_frequency)** de um som, estamos falando da velocidade dessa vibração. As frequências audíveis para humanos vão de 20 a 20.000 Hz, ou seja, de 20 a 20.000 ciclos por segundo. A nossa percepção subjetiva dessas frequências é chamada de **[altura](https://pt.wikipedia.org/wiki/Altura_(m%C3%BAsica))** (pitch).
 
 #### [Duração](https://pt.wikipedia.org/wiki/Dura%C3%A7%C3%A3o_(m%C3%BAsica))
 
@@ -33,13 +35,13 @@ O timbre é nossa percepção das diferenças de fontes sonoras de cada som. Mes
 
 ## Som digital
 
-O som digital é uma forma de representar, armazenar, manipular e reproduzir sinais sonoros. Um sinal analógico é convertido para um sinal digital, através de processos de *sampling* (amostragem) e de *quantização*. 
+O som digital é uma forma de representar, armazenar, manipular e reproduzir sinais sonoros. Um sinal analógico é convertido para um sinal digital, através de processos de *sampling* (amostragem) e de *quantização*.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/4-bit-linear-PCM.svg/500px-4-bit-linear-PCM.svg.png)
 
 *Acima: sinal analógico e seu equivalente já quantizado e amostrado.*
 
-**[Sampling](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) / amostragem** é o processo que "fatia" um som em pequenas partes para medir a intensidade do sinal nauqele momento do tempo. Cada fatia representa uma pequena porção de tempo e taxas de amostragem são medidas em Hz, ou número de amostragens por segundo. O som de um CD tem amostragem de 44100 Hz.
+**[Sampling](https://en.wikipedia.org/wiki/Sampling_(signal_processing)) / amostragem** é o processo que "fatia" um som em pequenas partes para medir a intensidade do sinal naquele momento do tempo. Cada fatia representa uma pequena porção de tempo e taxas de amostragem são medidas em Hz, ou número de amostragens por segundo. O som de um CD tem amostragem de 44100 Hz.
 
 **[Quantização](https://pt.wikipedia.org/wiki/Quantiza%C3%A7%C3%A3o)** é o processo que aproxima o valor de uma amostragem para uma gama de valores reduzida. Significa estabelecer uma precisão máxima para o valor de cada amostragem e implica na simplificação do formato de onda do sinal original. Quanto menor esse valor, mais drásticas é a simplificação da onda.
 
@@ -47,4 +49,4 @@ Som digital pode ser tanto fruto de um processo de gravação quanto de sintetiz
 
 ![](https://upload.wikimedia.org/wikipedia/commons/8/84/A-D-A_Flow.svg)
 
-*"<a href="https://commons.wikimedia.org/wiki/File:A-D-A_Flow.svg#/media/File:A-D-A_Flow.svg">A-D-A Flow</a>" por <a href="//commons.wikimedia.org/w/index.php?title=User:Teeks99&amp;action=edit&amp;redlink=1" class="new" title="User:Teeks99 (page does not exist)">Teeks99</a>.*
+*Acima: <a href="https://commons.wikimedia.org/wiki/File:A-D-A_Flow.svg#/media/File:A-D-A_Flow.svg">Fluxo analógico-digital-analógico</a>, por <a href="//commons.wikimedia.org/w/index.php?title=User:Teeks99&amp;action=edit&amp;redlink=1" class="new" title="User:Teeks99 (page does not exist)">Teeks99</a>.*
