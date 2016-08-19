@@ -8,9 +8,9 @@ Este site é a apostila digital da disciplina *Laboratório de áudio para jogos
 
 | Data  | Conteúdo                                                   | 
 |-------|------------------------------------------------------------| 
-| 04/08 | [Introdução à produção sonora e som digital]()             | 
-| 11/08 | [História do som em videogames]()                          | 
-| 18/08 | [Percepção sonora e musical]()                             | 
+| 04/08 | [Introdução à produção sonora e som digital](aulas/producao-sonora)             | 
+| 11/08 | [História do som em videogames](aulas/historia-som)                          | 
+| 18/08 | [Percepção sonora e musical](aulas/percepcao-sonora)                             | 
 | 25/08 | [Efeitos sonoros]()                                        | 
 | 01/09 | Oficina: [Síntese e edição de efeitos sonoros]()           | 
 | 08/09 | Oficina: [Captação de áudio]()                             | 

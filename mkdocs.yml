@@ -2,10 +2,11 @@ site_name: LabÁudio - 2016 - 2S
 pages:
 - Home: 'index.md'
 - Aulas:
-    - 'A01 - Produção sonora' : 'aulas/a01-producao-sonora.md'
-    - 'A02 - Som digital' : 'aulas/a02-som-digital.md'
-    - 'A03 - Efeitos sonoros' : 'aulas/a03-efeitos-sonoros.md'
-- 'Mais infos':
+    - 'Introdução à produção sonora e som digital' : 'aulas/producao-sonora.md'
+    - 'História do som em videogames' : 'aulas/historia-som.md'
+    - 'Percepção sonora e musical' : 'aulas/percepcao-sonora.md'
+- Mais infos :
+    - Glossário : 'glossario.md'
     - Ferramentas : 'ferramentas.md'
     - Referências : 'referencias.md'
 theme: bootstrap

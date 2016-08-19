@@ -1,4 +1,4 @@
-# Ferramentas 
+## Ferramentas 
 
 Aqui estão os links para algumas das ferramentas que vamos utilizar ao longo da disciplina.
 
@@ -10,6 +10,7 @@ Aqui estão os links para algumas das ferramentas que vamos utilizar ao longo da
 
 - [Bosca Ceoil](http://boscaceoil.net/) -> Ferramenta básica de criação musical para loops e arranjos. Exporta para MIDI. Tem uma [versão online](http://online.boscaceoil.net/).
 - [LMMS](https://lmms.io/) - > Ferramenta mais avançada e gratuita para criação musical. Permite o uso de VSTs e controladores MIDI.
+- [Helm](http://tytel.org/helm/) -> Sintetizador simples mas com sonoridade elaborada e flexibilidade.
 
 ### Editores de áudio
 

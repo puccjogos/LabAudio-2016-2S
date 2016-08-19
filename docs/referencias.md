@@ -1,4 +1,4 @@
-# Referências
+## Referências
 
 Bibliografia, links e outros materiais de referência.
 
