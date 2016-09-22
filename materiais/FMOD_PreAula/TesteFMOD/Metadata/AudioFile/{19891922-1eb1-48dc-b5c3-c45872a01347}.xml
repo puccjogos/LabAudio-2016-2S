@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{19891922-1eb1-48dc-b5c3-c45872a01347}">
+        <property name="assetPath">
+            <value>looperman-l-0310298-0091036-lendylen-lm-72-drums.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>13.336802721088436</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{ba90a0d7-caaa-441a-8927-5f62c2d86223}</destination>
+        </relationship>
+    </object>
+</objects>

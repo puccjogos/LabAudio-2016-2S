@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{5b1b39ab-292b-49bd-927e-a6afd896f1dc}">
+        <property name="assetPath">
+            <value>looperman-l-1564425-0099920-rasputin1963-shes-getting-fat.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>26.66578231292517</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{ba90a0d7-caaa-441a-8927-5f62c2d86223}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{aa44ca53-f582-48cf-8724-75ca1318eabd}">
+        <property name="assetPath">
+            <value>looperman-l-1720743-0095403-krispy4-vibes.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>26.666666666666668</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{ba90a0d7-caaa-441a-8927-5f62c2d86223}</destination>
+        </relationship>
+    </object>
+</objects>
