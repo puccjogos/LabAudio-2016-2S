@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{40588cf7-4da2-4b2f-ac2c-ba03fc74585e}">
+        <property name="assetPath">
+            <value>231537__vkproduktion__forest-birds-loop-02.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>30.000181405895692</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{be8d6d20-6b21-47f4-aa24-5beaa8782765}</destination>
+        </relationship>
+    </object>
+</objects>

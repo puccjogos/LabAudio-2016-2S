@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{c0cee7f3-c831-4dba-bf11-61001f4baf59}">
+        <property name="assetPath">
+            <value>looperman-l-1720743-0095432-krispy4-sex-machina.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>26.666666666666668</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{be8d6d20-6b21-47f4-aa24-5beaa8782765}</destination>
+        </relationship>
+    </object>
+</objects>

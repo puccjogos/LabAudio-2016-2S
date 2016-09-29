@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{f5d44ac9-6742-4c2a-8dac-3b209f208b93}">
+        <property name="assetPath">
+            <value>22132__inchadney__rain-in-forest.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>120.83199999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{8497b1b2-4d21-40fe-8893-f80e64d2e21a}</destination>
+        </relationship>
+    </object>
+</objects>

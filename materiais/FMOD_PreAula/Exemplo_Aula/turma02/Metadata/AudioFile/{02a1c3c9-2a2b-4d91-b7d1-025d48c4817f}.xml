@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{02a1c3c9-2a2b-4d91-b7d1-025d48c4817f}">
+        <property name="assetPath">
+            <value>276959__gfl7__pistol-reload-sound.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.4032653061224489</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{8497b1b2-4d21-40fe-8893-f80e64d2e21a}</destination>
+        </relationship>
+    </object>
+</objects>

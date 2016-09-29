@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.08.00">
+    <object class="AudioFile" id="{5064a4cb-1ee9-4f3e-9b45-24295609e4d9}">
+        <property name="assetPath">
+            <value>163456__lemudcrab__pistol-shot.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>1</value>
+        </property>
+        <property name="length">
+            <value>0.46077097505668935</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{be8d6d20-6b21-47f4-aa24-5beaa8782765}</destination>
+        </relationship>
+    </object>
+</objects>
