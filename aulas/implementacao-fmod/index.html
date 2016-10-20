@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../imgs/singing.gif">
+        
+
+	<title>Implementação (FMOD) - LabÁudio - 2016 - 2S</title>
+
+        <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/extra.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">LabÁudio - 2016 - 2S</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="../..">Home</a>
+                </li>
+            
+            
+            
+                <li class="dropdown active">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Aulas <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../producao-sonora/">Introdução à produção sonora e som digital</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../historia-som/">História do som em videogames</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../percepcao-sonora/">Percepção sonora e musical</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../efeitos-sonoros/">Efeitos sonoros (SFX)</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../oficina-sfx/">Oficina de SFX</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../captacao-audio/">Captação de áudio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../debate-sfx-propostas/">Discussão de SFX e direção de áudio</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../implementacao-sfx/">Implementação (Unity)</a>
+                        </li>
+                    
+                        <li class="active">
+                            <a href="./">Implementação (FMOD)</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mais infos <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                    
+                        <li >
+                            <a href="../../glossario/">Glossário</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../ferramentas/">Ferramentas</a>
+                        </li>
+                    
+                        <li >
+                            <a href="../../referencias/">Referências</a>
+                        </li>
+                    
+                    </ul>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                <li >
+                    <a rel="next" href="../implementacao-sfx/">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="../../glossario/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="https://github.com/puccjogos/labaudio-2016-2s">
+                        
+                            <i class="fa fa-github"></i>
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#implementando-audio-com-fmod">Implementando áudio com FMOD</a></li>
+        
+            <li><a href="#passo-a-passo-geral">Passo-a-passo geral</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="implementando-audio-com-fmod">Implementando áudio com FMOD</h1>
+<p>A implementação de áudio com FMOD depende de dois aspectos: a criação de um projeto de áudio dentro da ferramenta FMOD Studio e o uso do plugin de integração com a ferramenta Unity3D (está no <a href="http://www.fmod.org/download/#StudioExtras">site do FMOD</a>). Tanto o FMOD Studio quanto o plugin de integração devem estar com a mesma versão <strong>exata</strong> para garantir o bom funcionamento da implementação. <a href="../../materiais/Grotto_FMOD_Pre.zip">O exemplo que vamos utilizar em sala está disponível para download</a>.</p>
+<h2 id="passo-a-passo-geral">Passo-a-passo geral</h2>
+<ol>
+<li>Criar o projeto de áudio com eventos no FMOD.</li>
+<li>Determinar qual banco vai receber cada evento.</li>
+<li>A cada alteração, salvar e exportar (<em>buildar</em>) os bancos.</li>
+<li>Importar o plugin de integração dando dois clique no assetpackage.</li>
+<li>Configurar a pasta do projeto do FMOD dentro do editor da Unity.</li>
+<li>Utilizar o FMOD Studio Listener como listener da cena.</li>
+<li>Utilizar os componentes prontos do FMOD para disparar sons ou criar seus próprios scripts.</li>
+</ol>
+<h3 id="exemplo-de-controle-de-evento-por-script">Exemplo de controle de evento por script</h3>
+<pre><code class="csharp">// avisa o editor para mostrar o browser de eventos do FMOD
+[FMODUnity.EventRef]
+public string evento;
+
+void ComecouPulo () {
+    // se tiver algum evento
+    if (evento != null)
+    {
+        // cria uma nova instancia
+        FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(evento);
+        // dispara o som
+        e.start();
+        // liberar memoria assim que terminar / one-shot
+        e.release();
+    }
+}
+
+// exemplo de função para mudar parametro de um evento
+void MudarParametro(FMOD.Studio.EventInstance e, string nome, float valor)
+{
+    FMOD.Studio.ParameterInstance parametro;
+    e.getParameter(nome, out parametro);
+    parametro.setValue(valor);
+}
+</code></pre></div>
+        </div>
+
+	<footer class="col-md-12">
+		<hr>
+		
+		<p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+	</footer>
+
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
+        <script src="../../js/extra.js"></script>
+    </body>
+</html>
