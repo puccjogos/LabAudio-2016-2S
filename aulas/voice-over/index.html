@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../imgs/singing.gif">
         
 
-	<title>Implementação (FMOD) - LabÁudio - 2016 - 2S</title>
+	<title>Voice over - LabÁudio - 2016 - 2S</title>
 
         <link href="../../css/bootstrap-3.0.3.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -94,16 +94,16 @@
                             <a href="../implementacao-sfx/">Implementação (Unity)</a>
                         </li>
                     
-                        <li class="active">
-                            <a href="./">Implementação (FMOD)</a>
+                        <li >
+                            <a href="../implementacao-fmod/">Implementação (FMOD)</a>
                         </li>
                     
                         <li >
                             <a href="../intro-musica/">Música: história e teoria</a>
                         </li>
                     
-                        <li >
-                            <a href="../voice-over/">Voice over</a>
+                        <li class="active">
+                            <a href="./">Voice over</a>
                         </li>
                     
                     </ul>
@@ -140,12 +140,12 @@
             <!-- Search, Navigation and Repo links -->
             <ul class="nav navbar-nav navbar-right">
                 <li >
-                    <a rel="next" href="../implementacao-sfx/">
+                    <a rel="next" href="../intro-musica/">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../intro-musica/">
+                    <a rel="prev" href="../../glossario/">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -168,53 +168,67 @@
             <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#implementando-audio-com-fmod">Implementando áudio com FMOD</a></li>
+        <li class="main active"><a href="#voice-over">Voice over</a></li>
         
-            <li><a href="#passo-a-passo-geral">Passo-a-passo geral</a></li>
+            <li><a href="#glados-antes-e-depois">GlaDOS (antes e depois)</a></li>
+        
+            <li><a href="#jennifer-hale">Jennifer Hale</a></li>
+        
+            <li><a href="#ellen-mclain">Ellen McLain</a></li>
+        
+            <li><a href="#logan-cunningham">Logan Cunningham</a></li>
+        
+            <li><a href="#equipamentos">Equipamentos</a></li>
+        
+            <li><a href="#gravacao">Gravação</a></li>
         
     
     </ul>
 </div></div>
             <div class="col-md-9" role="main">
 
-<h1 id="implementando-audio-com-fmod">Implementando áudio com FMOD</h1>
-<p>A implementação de áudio com FMOD depende de dois aspectos: a criação de um projeto de áudio dentro da ferramenta FMOD Studio e o uso do plugin de integração com a ferramenta Unity3D (está no <a href="http://www.fmod.org/download/#StudioExtras">site do FMOD</a>). Tanto o FMOD Studio quanto o plugin de integração devem estar com a mesma versão <strong>exata</strong> para garantir o bom funcionamento da implementação. <a href="../../materiais/Grotto_FMOD_Pre.zip">O exemplo que vamos utilizar em sala está disponível para download</a>.</p>
-<h2 id="passo-a-passo-geral">Passo-a-passo geral</h2>
-<ol>
-<li>Criar o projeto de áudio com eventos no FMOD.</li>
-<li>Determinar qual banco vai receber cada evento.</li>
-<li>A cada alteração, salvar e exportar (<em>buildar</em>) os bancos.</li>
-<li>Importar o plugin de integração dando dois clique no assetpackage.</li>
-<li>Configurar a pasta do projeto do FMOD dentro do editor da Unity.</li>
-<li>Utilizar o FMOD Studio Listener como listener da cena.</li>
-<li>Utilizar os componentes prontos do FMOD para disparar sons ou criar seus próprios scripts.</li>
-</ol>
-<h3 id="exemplo-de-controle-de-evento-por-script">Exemplo de controle de evento por script</h3>
-<pre><code class="csharp">// avisa o editor para mostrar o browser de eventos do FMOD
-[FMODUnity.EventRef]
-public string evento;
+<h1 id="voice-over">Voice over</h1>
+<p>O primeiro jogo usando voz foi o <em>Dragon&rsquo;s Lair</em>, um arcade criado pela Disney em 1983. Conforme as plataformas mudaram (principalmente com a chegada de meios de suporte com mais espaço, como o CD-ROM), o uso de vozes em jogos se tornou cada vez mais comum, tanto numa função de narração quanto para a representação de personagens e diálogos.</p>
+<p>As funções mais comuns de vozes em jogos são:</p>
+<ul>
+<li>Feedback de gameplay</li>
+<li>Narração</li>
+<li>Diálogo</li>
+</ul>
+<p>Aqui estão alguns exemplos de voice overs de alta qualidade:</p>
+<h4 id="glados-antes-e-depois">GlaDOS (antes e depois)</h4>
+<iframe width="100%" height="150" src="https://www.youtube.com/embed/648DRxIfgx4" frameborder="0" allowfullscreen></iframe>
 
-void ComecouPulo () {
-    // se tiver algum evento
-    if (evento != null)
-    {
-        // cria uma nova instancia
-        FMOD.Studio.EventInstance e = FMODUnity.RuntimeManager.CreateInstance(evento);
-        // dispara o som
-        e.start();
-        // liberar memoria assim que terminar / one-shot
-        e.release();
-    }
-}
+<h4 id="jennifer-hale"><a href="https://en.wikipedia.org/wiki/Jennifer_Hale">Jennifer Hale</a></h4>
+<iframe width="100%" height="150" src="https://www.youtube.com/embed/wBnBw8ZglUk" frameborder="0" allowfullscreen></iframe>
 
-// exemplo de função para mudar parametro de um evento
-void MudarParametro(FMOD.Studio.EventInstance e, string nome, float valor)
-{
-    FMOD.Studio.ParameterInstance parametro;
-    e.getParameter(nome, out parametro);
-    parametro.setValue(valor);
-}
-</code></pre></div>
+<h4 id="ellen-mclain"><a href="https://en.wikipedia.org/wiki/Ellen_McLain">Ellen McLain</a></h4>
+<iframe width="100%" height="150" src="https://www.youtube.com/embed/AUkyh0WbxoQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="100%" height="150" src="https://www.youtube.com/embed/yVQ4seQj5Io" frameborder="0" allowfullscreen></iframe>
+
+<h4 id="logan-cunningham">Logan Cunningham</h4>
+<iframe width="100%" height="150" src="https://www.youtube.com/embed/6RTkUgov60g" frameborder="0" allowfullscreen></iframe>
+
+<h3 id="equipamentos">Equipamentos</h3>
+<p>O principal equipamento é o <strong>microfone</strong>, que irá converter as ondas sonoras em sinais digitais. Ele normalmente precisa de um <strong>preamp</strong> para aumentar o sinal gravado, o que pode ser um equipamento externo ou embutido no próprio microfone. Existem dois tipos principais de microfones, dinâmicos e condensadores. Microfones <strong>dinâmicos</strong> são usados para captar música ao vivo, normalmente tem uma faixa de frequência limitada e são mais baratos. Microfones <strong>condensadores</strong> captam uma faixa de frequência maior, usam alimentação externa, são mais caros e são usados em gravação de estúdio.</p>
+<p>Além desses dois tipos básicos, temos os padrões de captação de cada microfone. Microfones <strong>cardióides</strong> ou unidirecionais captam som em uma única direção e são bastante indicados para gravação de voz. Microfones <strong>omnidirecionais</strong> captam em várias direções e são mais usados em som ambiente e efeitos sonoros.</p>
+<h3 id="gravacao">Gravação</h3>
+<p>Um roteiro para voice-over é diferente de roteiros para filmes. As informações mais importantes seriam o nome do arquivo da gravação, o texto e os takes (onde você marca qual que está melhor). Esse roteiro é essencial para a organização do processo e também para a posterior integração com o jogo e qualquer localização necessária.</p>
+<p><img alt="Exemplo de script de voice-over" src="https://raw.githubusercontent.com/puccjogos/LabAudio-2015-2S/master/Docs/IMGS/script_vo.png" /></p>
+<p>Durante a gravação é importante garantir que os arquivos estão sendo nomeados corretamente, que o script está sendo seguido e que o ambiente onde a gravação está sendo realizada tem uma boa acústica e silêncio. Vale ressaltar a importância de consistência diegética, ou seja, que a voz de um ator esteja coerente com a narrativa e o ambiente em que ele se insere. Para conseguir isso, é uma boa ideia gravar com o mesmo equipamento e configurações todas as vozes de um personagem.</p>
+<p>Algumas dicas rápidas:</p>
+<ul>
+<li>Testar o posicionamento do microfone</li>
+<li>Salvar os arquivos constantemente</li>
+<li>Garantir que o texto está sempre visível, bem apoiado e sem trocas de página</li>
+<li>Leia de pé</li>
+<li>Tenha água por perto ou algo para o ator refrescar a voz</li>
+<li>Tente evitar pops e sibilos, usando um filtro ou reposicionando o microfone</li>
+<li>Ouça o resultado imediatamente</li>
+</ul>
+<p>Após a gravação, é necessário tratar os sons registrados, normalmente equilibrando o seu volume e corrigindo imperfeições, assim como incorporando efeitos necessários. Depois, é importante exportá-los corretamente e fazer backup.</p>
+<p>Durante a mixagem (o processo de finalização e combinação dos diferentes sons de um jogo), é importante lembrar que vozes estão, na maior parte das vezes, limitadas a um espectro de frequências médio. Essa informação deve ser levada em conta para ressaltar e evitar o abafamento da voz por outros sons no mesmo espectro, como alguns instrumentos musicais ou efeitos sonoros.</p></div>
         </div>
 
 	<footer class="col-md-12">
